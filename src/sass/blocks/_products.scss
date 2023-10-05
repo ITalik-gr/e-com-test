@@ -6,9 +6,25 @@
     justify-content: space-between;
   }
   &-item {
-
+    margin-right: 15px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include Screen-992 {
+      margin-right: 0;
+      margin-left: 24px;
+      max-width: 268px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        display: none;
+      }
+      
+    }
   }
   .product {
+
     &:nth-child(4n + 1) {
       background: #D3FBD9;
     }

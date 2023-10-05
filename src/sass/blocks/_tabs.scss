@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+    @include Screen-992 {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &-item {
     padding-bottom: 32px;
@@ -14,6 +18,18 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include Screen-992 {
+      margin-bottom: 24px;
+      max-width: 268px;
+      margin-right: 24px;
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+    }
     span {
       color: #3E3E3E;
       text-align: center;
@@ -40,6 +56,19 @@
   }
   &-body {
 
+  }
+  &-card {
+    @include Screen-992 {
+      margin-right: 0;
+      margin-left: 24px;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        display: none;
+      }
+      
+    }
   }
   &-content {
     display: none;

@@ -3,10 +3,12 @@
   &-wrap {
     display: flex;
     justify-content: space-between;
-
   }
   &-info {
     margin-right: 270px;
+    @include Screen-992 {
+      margin-right: 0;
+    }
   }
   &-logo {
     margin-bottom: 24px;
@@ -32,7 +34,7 @@
       margin-right: 0;
     }
   }
-  &-ink {
+  &-inc {
     color:  #3E3E3E;
     font-size: 14px;
     font-style: normal;
@@ -41,6 +43,9 @@
   }
   &-body {
     width: 100%;
+    @include Screen-992 {  
+      width: auto;
+    }
   }
   &-list {
     display: flex;
@@ -48,6 +53,12 @@
     margin-bottom: 40px;
   }
   &-block {
+    @include Screen-992 {
+      margin-right: 60px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
     &__title {
       color:  #3E3E3E;
       font-size: 16px;

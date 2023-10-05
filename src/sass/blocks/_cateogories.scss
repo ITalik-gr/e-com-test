@@ -19,6 +19,9 @@
       max-width: 424px;
       max-height: 180px;
       height: 100%;
+      @include Screen-1200 {
+        max-width: 268px;
+      }
       img {
         width: 100%;
       }

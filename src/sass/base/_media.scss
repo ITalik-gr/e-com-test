@@ -1,6 +1,10 @@
 
 @media (max-width: 1400px) { //1200
-
+  .nav {
+    &-list__item {
+      margin-right: 39px;
+    }
+  }
 }
 
 @media (max-width: 1200px) { //992
