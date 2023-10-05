@@ -1,0 +1,25 @@
+.products {
+  margin-top: -170px;
+  margin-bottom: 60px;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-item {
+
+  }
+  .product {
+    &:nth-child(4n + 1) {
+      background: #D3FBD9;
+    }
+    &:nth-child(4n + 2) {
+      background: #FFE4BD;
+    }
+    &:nth-child(4n + 3) {
+      background: #D9ABFD;
+    }
+    &:nth-child(4n + 4) {
+      background: #FDF0AB;
+    }
+  }
+}

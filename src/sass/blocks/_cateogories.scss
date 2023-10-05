@@ -1,0 +1,37 @@
+.categories {
+  background-color: #F5F6F8;
+  padding: 24px 0 196px 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-card {
+    position: relative;
+    transition: .4s all;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      transform: translateY(-5px);
+    }
+    &__image {
+      max-width: 424px;
+      max-height: 180px;
+      height: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    &__text {
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+      color:  #FFF;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
+    }
+  }
+}
