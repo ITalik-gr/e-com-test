@@ -31,8 +31,19 @@ ul {
     padding: 0;
     margin: 0;
 }
-:root {
-    color-text-text: #3E3E3E;
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 0;
+    background-color: #F5F6F8;
+    &-text {
+        color: #040404;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+    }
 }
 
 @import 'blocks/header';
@@ -40,3 +51,4 @@ ul {
 @import 'blocks/product';
 @import 'blocks/products';
 @import 'blocks/tabs';
+@import 'blocks/footer';

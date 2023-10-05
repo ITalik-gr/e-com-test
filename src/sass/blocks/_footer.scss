@@ -1,0 +1,116 @@
+.footer {
+  padding: 60px 0 40px 0;
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  &-info {
+    margin-right: 270px;
+  }
+  &-logo {
+    margin-bottom: 24px;
+    display: block;
+  }
+  &-address {
+    max-width: 140px;
+    color: #3E3E3E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-bottom: 24px;
+  }
+  &-socials {
+    display: flex;
+    align-items: center;
+    margin-bottom: 76px;
+  }
+  &-social {
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &-ink {
+    color:  #3E3E3E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  &-body {
+    width: 100%;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  &-block {
+    &__title {
+      color:  #3E3E3E;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px; /* 125% */
+      margin-bottom: 24px;
+    }
+    &__list {
+
+    }
+    &__item {
+      a {
+        color:  #292929;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 171.429% */
+        transition: .3s all;
+        &:hover {
+          color: #EB8426;
+        }
+      }
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+
+  &-privacy {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-links {
+    display: flex;
+    align-items: center;
+  }
+  &-link {
+    color:  #3E3E3E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    margin-right: 48px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      color: #EB8426;
+    }
+  }
+
+  &-top {
+    color:  #3E3E3E;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 133.333% */
+    svg {
+      margin-left: 12px;
+    }
+  }
+}

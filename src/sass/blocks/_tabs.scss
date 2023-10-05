@@ -1,13 +1,52 @@
 .tabs {
+  margin-bottom: 60px;
   &-nav {
-
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+  &-item {
+    padding-bottom: 32px;
+    border-bottom: 1px solid #E9E9E9;
+    width: 100%;
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    span {
+      color: #3E3E3E;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      display: block;
+      max-width: 95px;
+      transition: .3s all;
+    }
+    &:hover {
+      border-bottom: 1px solid #EB8426;
+      span {
+        color: #EB8426;
+      }
+    }
+    &--active {
+      border-bottom: 1px solid #EB8426;
+      span {
+        color: #EB8426;
+      }
+    }
   }
   &-body {
 
   }
   &-content {
-    display: flex;
+    display: none;
     justify-content: space-between;
+    &--active {
+      display: flex;
+    }
   }
   .product {
     margin-right: 10px;
